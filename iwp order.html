@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ORDER NOW</title>
+    <style></style>
+    <link rel="stylesheet" href="iwp login css.css">
+</head>
+<body>    
+    <div>
+        <form action="iwp end.html" onsubmit="return validateform()">
+            Size: 
+           <select id="select1" name="size">
+            <option value="default">select size</option>
+            <option value="28">28</option>
+            <option value="30">30</option>
+            <option value="32">32</option>
+            <option value="34">34</option>
+            <option value="36">36</option>
+           </select><br><br>
+           Quantity: 
+           <select id="select2" name="quantity">
+            <option value="default">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+           </select><br><br>
+           Date:<br>
+           <input type="text" name="date" id="date" placeholder="DD/MM/YYYY"><br><br>
+           Address:<br>
+           <textarea name="address" id="address" cols="40" rows="5" placeholder="Enter Address here"></textarea><br><br>
+           Pincode:<br>
+           <input type="text" name="pincode" id="pincode" placeholder="Enter pincode"><br><br>
+           Payment method:<br>
+           Credit/Debit<input type="radio" name="payment" id="payment" value="card"> COD<input type="radio" name="payment" value="cod"> Netbanking<input type="radio" name="payment" value="netbanking"> UPI <input type="radio" name="payment" value="upi"><br><br>
+           <input type="submit" name="submit" value="confirm">
+
+        </form>
+    </div>
+    <script>
+        function validateform() {
+            var date=document.getElementById("date").value;
+            var select1=document.getElementById("select1").value;
+            var select2=document.getElementById("select2").value;
+            var address=document.getElementById("address").value;
+            var pincode=document.getElementById("pincode").value;
+            var payment=document.querySelector('input[name="payment"]:checked')
+
+
+            if(select1=="default"){
+                alert("please select proper size")
+                return false;
+            }
+
+            if(select2=="default"){
+                alert("please select quantity")
+                return false;
+            }
+            if(date.length!=10 || date[2]!='/' || date[5]!='/'){
+                alert("Enter date in DD/MM/YYYY format");
+                return false;
+            }
+             if (address=== "") {
+                alert("Please enter your address.");
+                return false;
+            }
+            if (isNaN(pincode) || pincode.length!=6) {
+                alert("Please enter a valid pincode.");
+                return false;
+            }
+
+            if (!payment) {
+                alert("Please select a payment method.");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+    <style>
+        
+    </style>
+    <link rel="stylesheet" href="iwp login css.css">
+</head>
+<body>
+    <div>
+        
+        <form id="loginForm" action="iwp home.html" onsubmit="return validateForm()">
+        Mobile number:<br>
+        <input type="text" name="number" id="number" placeholder="Enter your mobile number"><br><br>
+        E-mail:<br>
+        <input type="text" name="email" id="email" placeholder="Enter email"><br><br>
+        Enter OTP:<br>
+        <input type="text" name="otp" id="otp" placeholder="Enter OTP"><br><br>
+        <input type="submit" name="login" value="Login"><br><br></form>
+        <form action="iwp create.html">
+         Don't have an account?<br>
+        <input type="submit" name="create" value="Create an account" ></form>
+    </div>
+    <script>
+        function validateForm() {
+            var number = document.getElementById("number").value;
+            var email = document.getElementById("email").value;
+            var otp = document.getElementById("otp").value;
+
+            if(number.length!=10 || isNaN(number))
+             {
+                alert("please re-check the mobile number");
+                return false;
+             }
+             let count=0;
+             for(let i=1;i<email.length-1;i++)
+             {
+                if(email[i]=='@')
+                {
+                    count=count+1;
+                }
+             }
+            if(count!=1)
+             {
+                alert("please enter valid email")
+                return false;
+             }
+
+            if(otp.length!=6 || isNaN(otp) )
+             {
+                alert("please enter correct otp");
+                return false;
+
+             }
+
+            return true;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CREATE AN ACCOUNT</title>
+    <link rel="stylesheet" href="iwp login css.css">
+</head>
+<body>
+    <div>
+        <form action="iwp home.html" onsubmit="return validateform()">
+            Name:<br>
+            <input type="text" name="name" id="name" placeholder="Enter your full name"><br><br>
+            Gender: Male<input type="radio" name="gender" id="gender" value="male">   Female<input type="radio" name="gender" value="female">  Other<input type="radio" name="gender" value="Other"><br><br>
+            Age:<br>
+            <input type="text" name="age" id="age" placeholder="Enter your age"><br><br>
+            Mobile number:<br>
+            <input type="text" name="number" id="number" placeholder="Enter your name"><br><br>
+            E-mail:<br>
+            <input type="text" name="email" id="email" placeholder="Enter E-mail"><br><br>
+            Password:<br>
+            <input type="password" name="password" id="password" placeholder="Enter the password"><br><br>
+            <input type="checkbox" id="robot"><b>* I'm not a robot.</b><br><br>
+            <input type="checkbox" id="agree"><b>* I read and agree with terms & conditions.</b><br><br>
+            <input type="submit" name="submit" value="Create an account">
+    </form>
+</div>
+<script>
+    function validateform(){
+        name=document.getElementById("name").value
+        gender=document.querySelector('input[name="gender"]:checked')
+        age=document.getElementById("age").value
+        number=document.getElementById("number").value
+        email=document.getElementById("email").value
+        password=document.getElementById("password").value
+        robot=document.getElementById("robot").checked;
+        agree=document.getElementById("agree").checked;
+        
+        if(name === "" || !isNaN(name))
+        {
+            alert("enter proper name");
+            return false;
+        }
+        if(!gender){
+            alert("select the gender")
+            return false;
+        }
+        if(isNaN(age) || age<18){
+            alert("you are not eligible")
+            return false;
+
+        }
+        if(number.length!=10 || isNaN(number))
+             {
+                alert("please re-check the mobile number");
+                return false;
+             }
+             let count=0;
+        for(let i=1;i<email.length-1;i++)
+        {
+            if(email[i]=='@')
+            {
+                 count=count+1;
+            }
+        }
+        if(count!=1)
+        {
+            alert("please enter valid email")
+            return false;
+        }
+        let count1=0;
+        let count2=0;
+        let count3=0;
+        let count4=0;
+        for(let i=0;i<password.length;i++)
+        {
+        if(password[i]>='A' && password[i]<='Z')
+        {
+            count1=count1+1;
+        }
+        if(password[i]>='a' && password[i]<='z')
+        {
+            count2=count2+1;
+        }
+        if(password[i]>=0 && password[i]<=9)
+        {
+            count3=count3+1;
+        }
+        if(password[i]=='!' || password[i]=='@' ||password[i]=='#' ||password[i]=='$' ||password[i]=='%' ||password[i]=='^' ||password[i]=='&' ||password[i]=='*' ||password[i]=='(' ||password[i]==')' ||password[i]=='-' ||password[i]=='_' ||password[i]=='=' ||password[i]=='+' ||password[i]==']' ||password[i]=='[' ||password[i]=='{' ||password[i]=='}' ||password[i]=='<' ||password[i]=='>' ||password[i]=='|' ||password[i]=='/' )
+        {
+            count4=count4+1;
+        }
+    }
+    if(password.length<8){
+        alert("password must be contain atleast 8 characters")
+        return false;
+    }
+    
+    if(count1==0 ){
+        alert("atleast 1 uppercase character required")
+        return false;
+    }
+    if(count2==0 ){
+        alert("atleast 1 lowercase character required")
+        return false;
+    }
+    if(count3==0 ){
+        alert("atleast 1 numeric character required")
+        return false;
+    }
+    if(count4==0 ){
+        alert("atleast 1 special character required")
+        return false;
+    }
+    if(!robot){
+        alert("please confirm that you are not a robot")
+        return false;
+    }
+    if(!agree){
+        alert("please agree all terms and conditions")
+        return false;
+    }
+
+        return true;
+
+    }
+
+
+</script>
+</body>
+</html>

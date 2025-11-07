@@ -1,0 +1,409 @@
+.head{
+    display: flex;
+    background-color:rgba(250, 249, 246);
+    box-shadow: 3px 4px 5px gray;
+    width: 100%;
+    position: fixed;
+    font-weight: 600;
+    height: 70px;
+    margin-top: 0px;
+    z-index: 10;
+}
+.home{
+    padding-top: 18px;
+    width: 110px;
+    font-size: 19px;
+    font-family:Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+}
+.men{
+    padding-top: 18px;
+    width: 100px;
+    font-size: 19px;
+    font-family:Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+}
+.women{
+    padding-top: 18px;
+    width: 130px;
+    font-size: 19px;
+    font-family:Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+}
+.kids{
+    padding-top: 18px;
+    width: 110px;
+    font-size: 19px;
+    font-family:Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+}
+.Wishlist{
+    padding-top: 18px;
+    width: 110px;
+    font-size: 17px;
+    font-family:Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    cursor: pointer;
+}
+.cart{
+    padding-top: 18px;
+    width: 100px;
+    font-size: 17px;
+    font-family:Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    cursor: pointer;
+}
+input[type=text]{
+    background-color: rgba(250, 249, 246, 0.849);
+    border-radius: 5px;
+    border-color: rgba(250, 249, 246, 0.849);
+    font-weight: 600;
+    border-radius: 10px;
+    width: 446px;
+    height: 28px;
+}
+input[type=submit]{
+    background-color: rgba(250, 249, 246, 0.849);
+    margin-left: 0px;
+    width: 80px;
+    height: 25px;
+    font-weight: 600;
+    color: rgb(14, 51, 84);
+    border-radius: 8px;
+    border-color: rgba(20, 20, 19, 0.849);
+    padding-top: 3px;
+    margin-top: 1px ;
+    cursor: pointer;
+}
+.search{
+    padding-top: 14px;
+    width: 465px;
+    margin-bottom: 25px;
+}
+.searchlogo{
+    padding-top: 22px;
+    width: 80px;
+}
+.login{
+    padding-top: 18px;
+    width: 110px;
+}
+.logo{
+    padding-top: 18px;
+    padding-left: 20px;
+    width: 100px;
+    cursor: pointer;
+}
+.profile{
+    padding-top: 18px;
+    width: 55px;
+    font-size: 17px;
+    font-family:Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    cursor: pointer;
+}
+.pic{
+    padding-top: 18px;
+    width: 50px;
+    cursor: pointer;
+}
+.c{
+    width: 1510px;
+    position: absolute;
+    margin-top: 70px;
+}
+.c1{
+    position: absolute;
+    width: 752px;
+    background-color: rgba(250, 249, 246, 0.849); 
+    margin-top: 660px;
+    z-index: 7;
+}
+.c2{
+    position: absolute;
+    width: 752px;
+    background-color: rgba(250, 249, 246, 0.849); 
+    margin-top: 660px;
+    margin-left:752px ;
+    z-index: 8;
+}
+.c3{
+    position: absolute;
+    width: 1510px;
+    background-color: rgba(250, 249, 246, 0.849); 
+    margin-top: 885px;
+}
+.c4{
+    position: absolute;
+    width: 1510px;
+    background-color: rgba(250, 249, 246, 0.849); 
+    margin-top: 1380px;
+}
+.main1{
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    margin-top: 1000px;
+    float: left;
+    padding: 12px;
+    border-radius: 17px;
+    margin-left: 17px;
+    z-index: 9;
+}
+.main2{
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    margin-top: 1505px;
+    float: left;
+    padding: 12px;
+    border-radius: 17px;
+    margin-left: 17px;
+}
+.footer1{
+    position: absolute;
+    margin-top: 1950px;
+    font-size: 16px;
+    background-color: #f7f7f7;
+    color: #696b79;
+    width: 1510px;
+    font-family:Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+}
+.playstore1{
+    position: absolute;
+    margin-top: 2010px;
+    margin-left: 736px;
+}
+.footer2{
+    position: absolute;
+    margin-top: 2560px;
+    font-size: 16px;
+    background-color: #f7f7f7;
+    color: #696b79;
+    width: 1510px;
+    font-family:Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+}
+.playstore2{
+    position: absolute;
+    margin-top: 2620px;
+    margin-left: 736px;
+}
+b{
+    color: black;
+}
+.men1{
+    position: absolute;
+    margin-top: 80px;
+    margin-left: 0px;
+}
+.shirt{
+    margin-top: 640px;
+    margin-left: 30px;
+    position: absolute;
+    font-weight: 600;
+    font-size: 32px;
+    color: #47474b;
+    font-family:Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+}
+.s1{
+    float: left;
+    position: absolute;
+    margin-left: 20px;
+    width: 270px;
+    margin-top: 710px;
+}
+.s2{
+    position: absolute;
+    margin-left: 300px;
+    width: 270px;
+    margin-top: 710px;
+}
+.s3{
+    position: absolute;
+    margin-left: 600px;
+    width: 270px;
+    margin-top: 710px;
+}
+.s4{
+    position: absolute;
+    margin-left: 900px;
+    width: 270px;
+    margin-top: 710px;
+}
+.s5{
+    position: absolute;
+    margin-left: 1200px;
+    width: 270px;
+    margin-top: 710px;
+}
+.price{
+    margin-left: 84px;
+    margin-top: 10px;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 550;
+    color:rgb(9, 152, 9);
+}
+.mrp{
+    margin-left: 84px;
+    margin-top: 10px;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 550;
+    text-decoration: line-through;
+    color: #696b79;
+}
+.bn{
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.bn input[type=submit]{
+    background-color: rgba(61, 217, 95, 0.849);
+    margin-left: 0px;
+    width: 80px;
+    height: 25px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    border-radius: 8px;
+    border-color: rgba(20, 20, 19, 0.849);
+    padding-top: 3px;
+    margin-top: 1px ;
+    cursor: pointer;
+}
+.bn input[type=button]{
+    background-color: rgba(250, 249, 246, 0.849);
+    margin-left: 0px;
+    width: 80px;
+    height: 25px;
+    font-weight: 600;
+    color: rgb(14, 51, 84);
+    border-radius: 8px;
+    border-color: rgba(20, 20, 19, 0.849);
+    padding-top: 3px;
+    margin-top: 1px ;
+    cursor: pointer;
+    margin-left: 22px;
+
+}
+.pant{
+    margin-top: 1100px;
+    margin-left: 30px;
+    position: absolute;
+    font-weight: 600;
+    font-size: 32px;
+    color: #47474b;
+    font-family:Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+}
+.p1{
+    float: left;
+    position: absolute;
+    margin-left: 20px;
+    width: 270px;
+    margin-top: 1170px;
+}
+.p2{
+    position: absolute;
+    margin-left: 300px;
+    width: 270px;
+    margin-top: 1170px;
+}
+.p3{
+    position: absolute;
+    margin-left: 600px;
+    width: 270px;
+    margin-top: 1170px;
+}
+.p4{
+    position: absolute;
+    margin-left: 900px;
+    width: 270px;
+    margin-top: 1170px;
+}
+.p5{
+    position: absolute;
+    margin-left: 1200px;
+    width: 270px;
+    margin-top: 1170px;
+}
+.shoes{
+    margin-top: 1560px;
+    margin-left: 30px;
+    position: absolute;
+    font-weight: 600;
+    font-size: 32px;
+    color: #47474b;
+    font-family:Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+}
+.h1{
+    float: left;
+    position: absolute;
+    margin-left: 20px;
+    width: 270px;
+    margin-top: 1630px;
+}
+.h2{
+    position: absolute;
+    margin-left: 300px;
+    width: 270px;
+    margin-top: 1630px;
+}
+.h3{
+    position: absolute;
+    margin-left: 600px;
+    width: 270px;
+    margin-top: 1630px;
+}
+.h4{
+    position: absolute;
+    margin-left: 900px;
+    width: 270px;
+    margin-top: 1630px;
+}
+.h5{
+    position: absolute;
+    margin-left: 1200px;
+    width: 270px;
+    margin-top: 1630px;
+}
+.other{
+    margin-top: 2020px;
+    margin-left: 30px;
+    position: absolute;
+    font-weight: 600;
+    font-size: 32px;
+    color: #47474b;
+    font-family:Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+}
+.o1{
+    float: left;
+    position: absolute;
+    margin-left: 20px;
+    width: 270px;
+    margin-top: 2090px;
+}
+.o2{
+    position: absolute;
+    margin-left: 300px;
+    width: 270px;
+    margin-top: 2090px;
+}
+.o3{
+    position: absolute;
+    margin-left: 600px;
+    width: 270px;
+    margin-top: 2090px;
+}
+.o4{
+    position: absolute;
+    margin-left: 900px;
+    width: 270px;
+    margin-top: 2090px;
+}
+.o5{
+    position: absolute;
+    margin-left: 1200px;
+    width: 270px;
+    margin-top: 2090px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: rgb(224, 93, 93);
+    zoom: 1.08;
+}
+img:hover{
+    opacity: 0.85;
+}
